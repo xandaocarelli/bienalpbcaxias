@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>XXX Bienal Brasileira de Arte Fotográfica Preto e Branco</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+    .cx-navbar { color: #a2a2a2 }
+    .cx-title {text-shadow: 2px 2px 2px black; white-space:nowrap; }
+    .cx-photo {padding: 0px 3px 0px 3px}
+    .cx-cursor { cursor: pointer }
+    .cx-social { padding-left: 5px; padding-right: 5px }
+    .cx-justify { text-align: justify;text-justify: inter-word; }
+    .cx-badge { width: 30px }
+    .cx-apoiadores { max-width:125px }
+    .cx-rod-apoiadores { padding: 0px 2px 0px 2px }
+    .cx-parcerias { color: #777 }
+    /* Sponsors slide */
+    .sponsors {display:none;}
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .bgimg-1 {
+        background-color: black;
+        min-height: 100%;
+    }
+    .bgimg-2 {
+        background-image: url("./images/back1.jpg");
+        min-height: 400px;
+    }
+    .bgimg-3 {
+        background-image: url("./images/back2.jpg");
+        min-height: 400px;
+    }
+    .bgimg-4 {
+        background-image: url("./images/back3.jpg");
+        min-height: 400px;
+    }
+    .bgimg-5 {
+        background-image: url("./images/back4.jpg");
+        min-height: 400px;
+    }
+    .bgimg-6 {
+        background-image: url("./images/back5.jpg");
+        min-height: 400px;
+    }
+    .bgimg-7 {
+        background-image: url("./images/back6.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+            background-attachment: scroll;
+        }
+    }
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118574294-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118574294-1');
+  </script>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar cx-navbar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#inicio" class="w3-small w3-bar-item w3-button">Início</a>
+    <a href="#bienal" class="w3-small w3-bar-item w3-button w3-hide-small w3-hide-medium "><i class="fa fa-camera-retro"></i> A Bienal</a>
+    <a href="#programacao" class="w3-small w3-bar-item w3-button w3-hide-small w3-hide-medium "><i class="fa fa-calendar"></i> Programação</a>
+    <a href="#jurados" class="w3-small w3-bar-item w3-button w3-hide-small w3-hide-medium "><i class="fa fa-users"></i> Jurados</a>
+    <a href="#midia" class="w3-small w3-bar-item w3-button w3-hide-small w3-hide-medium "><i class="fa fa-newspaper-o"></i> Mídia</a>
+    <a href="#regulamento" class="w3-small w3-bar-item w3-button w3-hide-small w3-hide-medium "><i class="fa fa-trophy"></i> Regulamento</a>
+    <a href="#parcerias" class="w3-small w3-bar-item w3-button w3-hide-small w3-hide-medium "><i class="fa fa-handshake-o"></i> Parcerias</a>
+    <a href="#caxiasdosul" class="w3-small w3-bar-item w3-button w3-hide-small w3-hide-medium "><i class="fa fa-map-o"></i> Caxias do Sul</a>
+  </div>
+
+  <!-- Navbar on small / medium screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large">
+    <a href="#bienal" class="w3-bar-item w3-button" onclick="toggleFunction()">A Bienal</a>
+    <a href="#programacao" class="w3-bar-item w3-button" onclick="toggleFunction()">Programação</a>
+    <a href="#jurados" class="w3-bar-item w3-button" onclick="toggleFunction()">Jurados</a>
+    <a href="#midia" class="w3-bar-item w3-button" onclick="toggleFunction()">Mídia</a>
+    <a href="#regulamento" class="w3-bar-item w3-button" onclick="toggleFunction()">Regulamento</a>
+    <a href="#parcerias" class="w3-bar-item w3-button" onclick="toggleFunction()">Parcerias</a>
+    <a href="#caxiasdosul" class="w3-bar-item w3-button" onclick="toggleFunction()">Caxias do Sul</a>
+  </div>
+</div>
+
+<!-- Bottom Sponsors -->
+<div class="w3-bottom w3-small w3-card-4 w3-center w3-white">
+  <a href="http://resultado.bienalcaxias.com.br" style="text-decoration:none;" target="_blank">
+    <div class="w3-block w3-orange cx-parcerias">
+      <h5>Clique aqui para ver o Resultado Final da Bienal</h5>
+    </div>
+  </a>
+  <strong class="cx-parcerias">PARCERIAS</strong>
+  <div class="w3-content w3-section" style="max-width:680px">
+    <a href="#parcerias" class="">
+      <img class="sponsors w3-image" src="./images/pat_sponsors_1.png">
+      <img class="sponsors w3-image" src="./images/pat_sponsors_2.png">
+      <img class="sponsors w3-image" src="./images/pat_sponsors_3.png">
+    </a>
+  </div>
+</div>
+<!-- /Bottom Sponsors -->
+
+<!-- Parallax (1) -->
+<div class="bgimg-1 w3-display-container" id="inicio">
+</div>
+
+<div>
+  <div class="w3-display-middle w3-mobile" style="white-space:nowrap;">
+    <div class="w3-row">
+      <img src="./images/logo.png" alt="Bienal PB" style="width: 100%; height: auto; max-width: 600px">
+    </div>
+    <div class="w3-row w3-center">
+      <h6>Correalização</h6>
+    </div>
+    <div class="w3-row w3-center w3-white w3-padding">
+      <div class="w3-col w3-center">
+          <a href="http://fsg.br" target="_blank" class="w3-block">
+            <img src="./images/pat_fsg.png" class="w3-image" alt="Centro Universitário da Serra Gaúcha – FSG" style="width: auto; height: auto; max-width: 100px">
+          </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-32 cx-justify" id="bienal">
+  <h4 class="w3-center">A BIENAL</h4>
+  <p>Em agosto de 2018, o Clube do Fotógrafo de Caxias do Sul, carinhosamente apelidado de "CFCX", terá o privilégio de sediar o maior evento fotográfico interclubes do país, quando trará a Caxias do Sul renomados fotógrafos, e mostrará uma das mais belas exposições coletivas no que se refere a imagens autorais de cunho artístico.</p>
+  <p>A Bienal consiste em um misto de concurso e festival de arte fotográfica que envolve todos os fotoclubes do Brasil, e é apadrinhada pela Confederação Brasileira de Fotografia (CONFOTO). Nela, os fotoclubes se entrelaçam em um proveitoso evento de aprendizado e integração, desafiando-se de forma muito saudável, a fim de galgarem melhores posições no ranking nacional, além de promoverem a permanente qualificação de seus associados.</p>
+  <p>O evento, na verdade, é anual, mas adotou o título de Bienal porque nos anos ímpares acontece a edição COR, e nos pares a P&B. Esta mais antiga, e que deu origem ao nome em 1960.</p>
+  <p>A cada ano, um fotoclube se responsabiliza por sediar a Bienal em sua cidade ou região, recebendo um número expressivo de fotoclubistas de vários pontos do país, para acompanhar a votação e/ou participar da entrega dos prêmios, exposição, palestras, oficinas e passeios guiados que integram o evento. Todas as atividades são gratuitas e abertas ao público em geral.</p>
+  <p>A cada edição, participam em torno de 3.000 fotografias de todo o país, mas, em 2018, o CFCX pretende superar esse recorde. Depois de catalogadas, as imagens são submetidas a uma seleção realizada por um corpo de jurados composto por 5 pessoas de renomada experiência no mundo das artes e fotografia, todas indicadas pela CONFOTO. O julgamento é presencial e antecede a Bienal em 15 dias, sendo que nele os jurados selecionam as 150 melhores fotografias que farão parte da exposição, dentre elas destacadas as Medalhas de Ouro, Prata e Bronze, e mais 17 Menções Honrosas. Para participar do concurso, o fotógrafo precisa ser filiado a um fotoclube.</p>
+  <p>As Bienais também estabelecem o ranking dos mais de 100 fotoclubes do Brasil, sendo que o CFCX vem se mantendo na posição de segundo melhor clube do país desde 2010, exceto pela edição cor de 2013, quando conquistou o primeiro lugar.</p>
+  <p>Repetindo a experiência de sucesso demonstrada em 2010, quando sediou o evento e deixou excelente impressão nos participantes, o CFCX deu a largada nos trabalhos de planejamento da XXX Bienal P&B, e a pauta promete ser ainda mais rica em atividades, movimentando seguimentos importantes de Caxias do Sul e região. A Bienal, que abre no dia 04 de agosto de 2018, integrará a programação da 11ª Semana da Fotografia e, segundo a Diretoria, "a meta é trazer o maior número possível de fotoclubistas do país, para se integrarem às atividades fotográficas da Bienal e confraternizarem com o povo da serra gaúcha".</p>
+</div>
+<!-- /Parallax (1) -->
+
+<!-- Parallax (2) -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-topleft w3-small w3-black cx-photo"> Foto: Tomas Brugger </div>
+  <div class="w3-display-middle">
+    <span class="w3-xlarge w3-text-white w3-wide cx-title">PROGRAMAÇÃO</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-32" id="programacao">
+  <h4 class="w3-center">PROGRAMAÇÃO</h4>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">02/Maio a 30/Junho</span><br>
+    Recebimento das Fotos
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">13/Julho a 14/Julho</span><br>
+    Julgamento
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">04/Agosto</span><br>
+    Abertura Exposição
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-large">05/Agosto a 30/Agosto</span><br>
+    Exposição
+  </div>
+</div>
+
+<div class="w3-row w3-dark-grey w3-padding-16">
+  <div class="w3-third">
+    <div class="w3-card-4 w3-light-gray w3-padding w3-margin">
+      <div class="w3-row">
+        <div class="w3-col"><h5>Dia 12/07 (Quinta-Feira)</h5></div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Palestra Emídio Luisi - Itália Mia, 30 anos de fotografias capturadas em visitas do autor à terra natal<br>Lançamento do Livro "Itália Mia"<br><span class="w3-small">19:00h - Centro Universitário da Serra Gaúcha – FSG</span></span>
+        </div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Palestra Evandro Teixeira - A Fotografia no Contexto da História<br><span class="w3-small">19:40h - Centro Universitário da Serra Gaúcha – FSG</span></span>
+        </div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Palestra Valdemir Cunha - Produção de Livros Fotográficos<br><span class="w3-small">20:20h - Centro Universitário da Serra Gaúcha – FSG</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4 w3-light-gray w3-padding w3-margin">
+      <div class="w3-row">
+        <div class="w3-col"><h5>Dia 14/07 (Sábado)</h5></div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Passeio Fotográfico - Interior da Colônia Italiana<br><span class="w3-small">14:30h - Sede CFCX <br> Exclusivo para fotoclubistas</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4 w3-light-gray w3-padding w3-margin">
+      <div class="w3-row">
+        <div class="w3-col"><h5>Dia 15/07 (Domingo)</h5></div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Passeio Fotográfico - Pontos Turísticos de Caxias do Sul<br><span class="w3-small">9:00h - Sede do CFCX <br> Exclusivo para fotoclubistas</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="w3-third">
+    <div class="w3-card-4 w3-light-gray w3-padding w3-margin">
+      <div class="w3-row">
+        <div class="w3-col"><h5>Dia 04/08 (Sábado)</h5></div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Saída Fotográfica: Passeio Por Vila Italiana, origem da indústria da região<br><span class="w3-small">8:30h - Swan Hotéis <br> Exclusivo para fotoclubistas</span></span>
+        </div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Visitação à Vinícola Don Bonifácio<br><span class="w3-small">14:30h - Em frente ao Posto Petrobrás (Esquina Rua 13 de Maio com Rua Os 18 do Forte)<br> Exclusivo para fotoclubistas</span></span>
+        </div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Assembléia CONFOTO<br><span class="w3-small">17:00h - Swan Hotéis</span></span>
+        </div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Cerimônia de Premiação<br><span class="w3-small">19:30h - Casa de Cultura Percy Vargas de Abreu e Lima</span></span>
+          <span class="w3-block w3-small">Apresentação artística da cultura regional com o grupo Os Gaudérios.</span></span>
+          <img class="w3-image" src="images/gauderios.jpg">
+        </div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Abertura da Exposição<br><span class="w3-small">21:00h - Casa de Cultura Percy Vargas de Abreu e Lima</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-third">
+    <div class="w3-card-4 w3-light-gray w3-padding w3-margin">
+      <div class="w3-row">
+        <div class="w3-col"><h5>Dia 05/08 (Domingo)</h5></div>
+      </div>
+      <div class="w3-row w3-border-top">
+        <div class="w3-col">
+          <span class="w3-block">Passeio fotográfico à Igreja de San Pelegrino e ao Complexo Moinho da Estação<br><span class="w3-small">9:00h - Sede CFCX <br> Exclusivo para fotoclubistas</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-dark-grey w3-padding-16">
+    <div class="w3-col m1 w3-hide-small">&nbsp;</div>
+    <div class="w3-col m12">
+      <div class="w3-card-4 w3-light-gray w3-padding w3-margin w3-center">
+        <p class="w3-large">
+          <h5>IMPORTANTE</h5>
+        </p>
+        <p>
+          Clique no botão "Inscreva-se" para garantir seu acesso aos eventos da Bienal
+        </p>
+        <p>
+          <a class="button-small-text" href="https://www.sympla.com.br/bienalcaxias" target="_blank">
+            <img src="http://www.sympla.com.br/images/btn-register-widget.png" alt="Inscreva-se" class="w3-image w3-grayscale-max"/>
+          </a>
+        </p>
+      </div>
+    </div>
+    <div class="w3-col m1 w3-hide-small">&nbsp;</div>
+  </div>
+</div>
+<!-- /Parallax (2) -->
+
+
+<!-- Parallax  (3) -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-topleft w3-small w3-black cx-photo"> Foto: Javier Paquito Herrera </div>
+  <div class="w3-display-middle">
+    <span class="w3-xlarge w3-text-white w3-wide cx-title">JURADOS</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-32" id="jurados">
+  <h4 class="w3-center">JURADOS</h4>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-row w3-margin-top">
+    <div class="w3-col m1 w3-hide-small">&nbsp;
+    </div>
+    <div class="w3-col m2 s4">
+      <img src="./images/jur_emidio_luisi2.png" alt="Emidio Luisi" class="cx-cursor w3-card-4" onClick="openModal(this)" data-modal="modal01">
+      <p>
+        <span class="w3-medium w3-block">Emidio Luisi</span>
+        <span class="w3-small cx-cursor" onClick="openModal(this)" data-modal="modal01">Ver perfil</span>
+      </p>
+    </div>
+    
+    <div class="w3-col m2 s4">
+      <img src="./images/jur_eneida_serrano.png" alt="Eneida Serrano" class="cx-cursor w3-card-4" onClick="openModal(this)" data-modal="modal02">
+      <p>
+        <span class="w3-medium w3-block">Eneida Serrano</span>
+        <span class="w3-small cx-cursor" onClick="openModal(this)" data-modal="modal02">Ver perfil</span>
+      </p>
+    </div>
+    <div class="w3-col m2 s4">
+      <img src="./images/jur_evandro_teixeira.png" alt="Evandro Teixeira" class="cx-cursor w3-card-4" onClick="openModal(this)" data-modal="modal03">
+      <p>
+        <span class="w3-medium w3-block">Evandro Teixeira</span>
+        <span class="w3-small cx-cursor" onClick="openModal(this)" data-modal="modal03">Ver perfil</span>
+      </p>
+    </div>
+    <div class="w3-col m2 s6">
+      <img src="./images/jur_orlando_azevedo.png" alt="Orlando Azevedo" class="cx-cursor w3-card-4" onClick="openModal(this)" data-modal="modal04">
+      <p>
+        <span class="w3-medium w3-block">Orlando Azevedo</span>
+        <span class="w3-small cx-cursor" onClick="openModal(this)" data-modal="modal04">Ver perfil</span>
+      </p>
+    </div>
+    <div class="w3-col m2 s6">
+      <img src="./images/jur_valdemir_cunha.png" alt="Valdemir Cunha" class="cx-cursor w3-card-4" onClick="openModal(this)" data-modal="modal05">
+      <p>
+        <span class="w3-medium w3-block">Valdemir Cunha</span>
+        <span class="w3-small cx-cursor" onClick="openModal(this)" data-modal="modal05">Ver perfil</span>
+      </p>
+    </div>
+    <div class="w3-col m1 w3-hide-small">
+    </div>
+  </div>
+</div>
+<!-- /Parallax (3)  -->
+  
+<!-- Parallax (4) -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-topleft w3-small w3-black cx-photo"> Foto: Tadeu Vilani </div>
+  <div class="w3-display-middle">
+    <span class="w3-xlarge w3-text-white w3-wide cx-title">MÍDIA</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-32" id="midia">
+  <h4 class="w3-center">MÍDIA</h4>
+</div>
+
+<div class="w3-content w3-container w3-padding-32">
+  <div class="w3-row-padding w3-center w3-white w3-padding-16">
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=vvUOa8Nrdx8" target="_blank">
+        <img src="./images/video_gandara.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>Presidente CFCX convoca Fotoclubistas</p>
+    </div>
+    
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=L41DofIXcIU" target="_blank">
+        <img src="./images/video_pozenato.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>José Clemente Pozenato</p>
+    </div>
+    
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=qgIOBeG_5kg" target="_blank">
+        <img src="./images/video_teaser_contagem.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>Teaser Contagem Regressiva</p>
+    </div>
+      
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=aFlizOPpJtg" target="_blank">
+        <img src="./images/video_bastiana_caxienses.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>Bastiana das Dores Convoca Caxienses</p>
+    </div>
+
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=c2BnokaltOI" target="_blank">
+        <img src="./images/video_bastiana_brasil.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>Bastiana das Dores Convoca Brasil</p>
+    </div>
+
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=fn7cGl8iBJE" target="_blank">
+        <img src="./images/video_iotti_caxienses.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>Carlos Henrique Iotti - Convoca Caxienses</p>
+    </div>
+
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=_TTo2g5p5f0" target="_blank">
+        <img src="./images/video_iotti_brasil.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>Carlos Henrique Iotti - Convoca Brasil</p>
+    </div>
+
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=edjS2W04HRQ" target="_blank">
+        <img src="./images/video_caxias_arte_foto.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>Caxias da Arte Fotográfica</p>
+    </div>
+
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=OiRf5lSPm4w" target="_blank">
+        <img src="./images/video_brasil_serra.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>O Brasil na Serra Gaúcha</p>
+    </div>
+  
+    <div class="w3-third">
+      <a href="https://www.youtube.com/watch?v=MOHQrNCxplc" target="_blank">
+        <img src="./images/video_bienal.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+      </a>
+      <p>XXX Bienal Brasileira de Arte Fotográfica em Preto e Preto</p>
+    </div>
+  </div>
+</div>
+<!-- Parallax (4) -->
+
+<!-- Parallax (5) -->
+<div class="bgimg-5 w3-display-container w3-opacity-min">
+  <div class="w3-display-topleft w3-small w3-black cx-photo"> Foto: Maurício Gollin </div>
+  <div class="w3-display-middle">
+     <span class="w3-xlarge w3-text-white w3-wide cx-title">REGULAMENTO</span>
+  </div>
+</div>
+
+<div class="w3-content w3-container w3-padding-32" id="regulamento">
+  <h4 class="w3-center">REGULAMENTO</h4>
+</div>
+
+<div class="w3-content w3-container w3-margin-bottom">
+  <div class="w3-row">
+    <div class="w3-large w3-center">
+      <p>O Regulamento Oficial da Bienal está no site da CONFOTO, clique no logo abaixo para acessar:</p>
+      <p>
+        <a href="http://confoto.art.br/fotografia/concursos/668-xxx-bienal-de-arte-fotografica-brasileira-em-preto-e-branco.html" target="_blank">
+          <img src="./images/confoto.png" alt="CONFOTO" style="width: auto; height: 66px;">
+        </a>
+      </p>
+      <p class="w3-padding-32">
+        <strong>Importante: </strong><br>
+        O recebimento das fotos será de 02/Maio a 30/Junho.<br>
+        Escolha um método de envio que assegure que suas fotos chegarão até o dia 30/Junho.
+      </p>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large w3-greyscale" style="width:100%;height:400px;"></div>
+    </div>
+    <div class="w3-col m8">
+      <p><i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></p>
+      <p>As obras deverão ser enviadas para:</p>
+      <p>
+        CLUBE DO FOTÓGRAFO DE CAXIAS DO SUL<br>
+        Rua Coronel Flores, 810 - Sala 301<br>
+        Complexo Moinho da Estação<br>
+        Bairro São Pelegrino<br>
+        CEP 95034-060 - Caxias do Sul - RS<br>
+        BRASIL
+      </p>
+      <div class="w3-right">
+        <p><i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i></p>
+        <p>
+          Dúvidas? Mande-nos um email:<br>
+          <a href="mailto:contato@clubedofotografodecaxias.com.br">contato@clubedofotografodecaxias.com.br</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /Parallax (5) -->
+
+<!-- Parallax (6) -->
+<div class="bgimg-6 w3-display-container w3-opacity-min">
+  <div class="w3-display-topleft w3-small w3-black cx-photo"> Foto: Rodrigo Rossi </div>
+  <div class="w3-display-middle">
+      <span class="w3-xlarge w3-text-white w3-wide cx-title">PARCERIAS</span>
+  </div>
+</div>
+  
+<div class="w3-content w3-container w3-padding-32 cx-justify" id="parcerias">
+  <h4 class="w3-center">PARCERIAS</h4>
+  <div class="w3-panel w3-light-grey">
+    <span style="font-size:80px;line-height:0.6em;opacity:0.2">&#10077;</span>
+    <p class="w3-medium" style="margin-top:-40px">
+    <i>
+      "Na vida, não basta acreditarmos na importância de um projeto, também devemos superar desafios para que ele se torne realidade. Precisamos de parceiros que acreditem nessa caminhada e nos resultados positivos que o andar juntos pode trazer.
+      <br>O Clube do Fotógrafo de Caxias do Sul agradece a confiança dos nossos parceiros da XXX Bienal Brasileira de Fotografia em Preto e Branco.
+      <br>Estamos certos que alcançaremos nosso objetivo de fazer da Bienal um evento de sucesso e, junto aos seus participantes e entidades associadas, contribuir para a promoção da marca de nossos parceiros."
+    </i></p>
+  </div>
+
+  <h6 class="w3-center w3-left">CORREALIZAÇÃO</h6>
+  <div class="w3-row w3-padding-32 w3-margin-top w3-section">
+    <div class="w3-col m12 s12">
+      <div class="w3-margin w3-center">
+        <a href="http://fsg.br" target="_blank" class="w3-block"><img src="./images/pat_fsg.png" alt="FSG"></a>
+      </div>
+    </div>
+  </div>
+
+  <h6 class="w3-center w3-left">PATROCÍNIO</h6>
+  <div class="w3-padding-32 w3-margin-top w3-section w3-center">
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.unimed-ners.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_unimed.png" alt="Unimed"></a>
+        </div>
+      </div>
+
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://bancodesangue.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_bancodesangue.png" alt="Banco de Sangue"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.construesse.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_construesse.jpg" alt="Construesse"></a>
+        </div>
+      </div>
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.construesse.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_edincorp.jpg" alt="Edincorp"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.swanhoteis.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_swan.png" alt="Swan Hotéis"></a>
+        </div>
+      </div>
+    
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://verodellaudo.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_vero_dellaudo.png" alt="Vero Dellaudo"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.soniahermoza.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_sonia_hermoza.png" alt="Sônia Hermoza"></a>
+        </div>
+      </div>
+
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.quintadonbonifacio.com.br" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_bonifacio.png" alt="Quinta Don Bonifacio"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="https://www.medilar.com.br" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_medilar.png" alt="Medilar"></a>
+        </div>
+      </div>
+
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h6 class="w3-center w3-left">APOIO</h6>
+  <div class="w3-padding-32 w3-margin-top w3-section w3-center">
+  
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="https://www.cesaros.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_cesaros.png" alt="Cesaros"></a>
+        </div>
+      </div>
+
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.orquidea.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_orquidea.png" alt="Orquídea"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.goimage.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_goimage.png" alt="Go Image"></a>
+        </div>
+      </div>
+
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.caxiastur.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_caxiastur.png" alt="Caxiastur"></a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="https://www.facebook.com/postodaytonacxs/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_daytona.png" alt="Posto Daytona"></a>
+        </div>
+      </div>
+
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="https://www.translovato.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_translovato.png" alt="Translovato"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row">
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="http://www.toocomunicacao.com.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_too.png" alt="Too"></a>
+        </div>
+      </div>
+
+      <div class="w3-col m6 s6">
+        <div class="w3-margin">
+          <a href="https://caxias.rs.gov.br/" target="_blank" class="w3-block"><img class="w3-image cx-apoiadores" src="./images/pat_prefeitura.png" alt="Prefeitura"></a>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+<!-- /Parallax (6) -->
+
+<!-- Parallax (7) -->
+<div class="bgimg-7 w3-display-container w3-opacity-min">
+  <div class="w3-display-topleft w3-small w3-black cx-photo"> Foto: Celso Tissot </div>
+  <div class="w3-display-middle">
+    <span class="w3-xlarge w3-text-white w3-wide cx-title">CAXIAS DO SUL</span>
+  </div>
+</div>
+  
+<div class="w3-content w3-container w3-padding-32" id="caxiasdosul">
+  <h4 class="w3-center">CAXIAS DO SUL</h4>
+</div>
+  
+<div class="w3-content w3-container w3-padding-32">
+  <div class="w3-row">
+    <div class="w3-col m1 w3-hide-small">&nbsp;</div>
+    <div class="w3-col m10 s12 cx-justify">
+
+      <p class="w3-card w3-padding w3-light-grey">
+        Neste espaço você encontra informações sobre nossa cidade, e promoções especiais que nossos parceiros prepararam para o
+        período da Bienal de Fotografia em Caxias do Sul.
+      </p>
+
+      <div class="w3-container w3-block w3-left-align w3-border-top w3-border-left w3-padding w3-margin-top"><strong>Como chegar</strong>
+        <span class="w3-badge cx-badge w3-right w3-margin-right">
+          <i class="fa fa-plane"></i>
+        </span>
+      </div>
+
+      <div class="w3-container">
+        <p class="w3-margin-top">
+          Aeroporto Regional de Caxias do Sul - Hugo Cantergiani (CXJ) operando com voos nacionais diários, pela Gol Linhas Aéreas ou
+          Azul, com saídas diretas de/para São Paulo (CGH - Congonhas) e Campinas (VCP - Viracopos). Há ainda a opção de pegar um voo
+          até Porto Alegre, que recebe mais voos diários, inclusive internacionais, e de lá pegar um ônibus até Caxias do Sul.
+        </p>
+        <p class="w3-margin-top">
+          Durante o inverno, nossa região costuma ter alguns dias com neblina, o que acaba cancelando voos ou redirecionando os mesmos
+          para outros aeroportos. Para evitar este tipo de contratempo, você pode optar por pegar um voo direto para Porto Alegre, e de
+          lá vir a Caxias do Sul de ônibus.
+        </p>
+        <p class="w3-center">
+          <a href="http://www.caxiastur.com.br" target="_blank" class="w3-block"><img class="w3-image" src="./images/pat_caxiastur.png" alt="Caxiastur"></a>
+        </p>
+        <p class="w3-margin-top">
+          Nosso parceiro da Caxiastur tem descontos especiais para passagens aéreas durante o período da Bienal. Entre em contato e
+          faça uma cotação. Lembre-se de informar que você está vindo para a  <u>Bienal de Fotografia em Caxias do Sul</u>.
+        </p>
+        <p class="w3-margin-top">
+          Caxiastur - Falar com Cedenir Saraiva<br>
+          Telefones: <strong>(54)3025-1777</strong> e <strong>(54)98115-0597</strong>
+        </p>
+      </div>
+
+      <div class="w3-block w3-left-align w3-border-top w3-border-left w3-padding w3-margin-top"><strong>Hospedagem</strong>
+        <span class="w3-badge cx-badge w3-right w3-margin-right">
+          <i class="fa fa-hotel"></i>
+        </span>
+      </div>
+      <div class="w3-container">
+        <p class="w3-center">
+          <a href="http://www.swanhoteis.com.br/" target="_blank" class="w3-block"><img class="w3-image" src="./images/pat_swan.png" alt="Swan Hotéis"></a>
+        </p>
+        <p class="w3-margin-top">
+          A rede Swan Hotéis é o <strong>Hotel Oficial da Bienal 2018</strong>, com preços especiais e proximidade com os locais dos eventos.
+        </p>
+        <p class="w3-margin-top">
+          Datas: 13/07/2018 a 15/07/18 e 02/08/2018 a 06/08/2018
+          <ul class="w3-ul w3-border">
+            <li>Diária Apartamento Standard Single: <strong>R$ 169,00</strong> ( não cobramos taxas extras )</li>
+            <li>Diária Apartamento Standard Duplo: <strong>R$ 192,00</strong> ( não cobramos taxas extras )</li>
+            <li>Diária Apartamento Standard Triplo: <strong>R$ 219,00</strong> ( não cobramos taxas extras )</li>
+          </ul>
+        </p>
+        <p class="w3-margin-top">
+          Inclusos nas diárias: Café da manhã, Internet, Academia, Piscina aquecida, Sauna e Sala de jogos
+        </p>
+        <p class="w3-margin-top">
+          <strong>IMPORTANTE:</strong> Para fazer sua reserva, utilize os contatos abaixo e informe que você está vindo para a <u>Bienal de Fotografia em Caxias do Sul</u>.
+        </p>
+        <p class="w3-margin-top">
+          Central de Reservas: <strong>0800 70 77 106</strong><br>
+          Email: <strong>reservas@swanhoteis.com.br</strong>
+        </p>
+      </div>
+    </div>
+    <div class="w3-col m1 w3-hide-small">&nbsp;</div>
+  </div>
+</div>
+<!-- Parallax (7) -->
+  
+<!-- Modal - Emidio Luisi -->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Fechar"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-top w3-transparent w3-padding-64 cx-justify">
+    <img src="./images/jur_emidio_luisi2.png" alt="Emidio Luisi" class="w3-display-topright">
+    <h5>Emidio Luisi</h5>
+    <h6>Fotógrafo</h6>
+    <p>
+      Nascido na Itália, começou a fotografar na década de 1970. Trabalhou como fotojornalista para a revista Veja SP
+      e para o Diário do Grande ABC, atuando também em espetáculos de teatro, dança, etnofotografia e ensaios pessoais.
+    </p>
+    <p>
+      Coordenou oficinas de fotografia em diversas cidades brasileiras e foi professor convidado do Curso de Pós-Graduação
+      da Universidade Estadual de Londrina (UEL). Realizou várias exposições no Brasil e no exterior. Recebeu o XI Prêmio
+      Abril de Fotojornalismo (1985), o Prêmio Aberje (1987) e o Prêmio Fotografia da APCA (2011). Participa das coleções
+      de fotógrafos brasileiros do Instituto Cultural Itaú , do MASP - Acervo Coleção Pirelli, Museu da Fotografia Cidade
+      de Curitiba, Museu da Fotografia em Fortaleza dirigido por Silvio Frota.
+    </p>
+    <p>
+      Foi curador do Projeto Caixa & Memórias, do Projeto Caixa Populi e de O Palco de Antunes, 50 anos de teatro – todos 
+      em parceria com a Caixa Econômica Federal; e do livro Retrospectiva Fotojornalismo 2000, da Associação de Repórteres
+      Fotográficos e Cinematográficos. É autor de Ue’Paesà (Fotograma, 1997), Kazuo Ohno (Cosac & Naify, 2003), Ballet
+      Stagium 35 anos (Fotograma, 2008) e, a convite da Fundação Pró-Memória de São Carlos, de São Carlos de todos os povos
+      (Fotograma, 2008) em 2011 lançou o Livro “Fotografia de Espetáculo “ Editora Photos. Realizou também a exposição Paesani,
+      no Sesc Pinheiros.
+    </p>
+    <p>
+      Em 2012, integrou a exposição Ocupação Ballet Stagium, no Instituto Itaú Cultural, a exposição
+      Antunes Filho, poeta da cena, no Sesc Consolação, lançando na ocasião o livro de mesmo nome pelas Edições Sesc Lançou
+      o Livro Kazuo Yoshito Ohno pelas Edições Sesc e foi premiado com 58º Prêmio Jabuti pela publicação, e o Livro Itália
+      Mia ! lançado em Dezembro de 2017, Atualmente fotografa, coordena projetos na área de fotografia e dirige a Fotograma Imagens.
+    </p>
+    <p class="w3-center">
+      <img src="./images/jur_emidio_luisi_livro.jpg" alt="Livro Itália Mia">
+    </p>
+    <p>
+      <a href="http://www.fotogramaimagens.com" target="_blank" class="w3-block">www.fotogramaimagens.com</a>
+      <a href="mailto:fotograma@fotogramaimagens.com" class="w3-block">fotograma@fotogramaimagens.com</a>
+    </p>
+  </div>
+</div>
+<!-- /Modal -->
+
+<!-- Modal - Eneida Serrano -->
+<div id="modal02" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Fechar"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-top w3-transparent w3-padding-64 cx-justify">
+    <img src="./images/jur_eneida_serrano.png" alt="Eneida Serrano" class="w3-display-topright">
+    <h5>Eneida Serrano</h5>
+    <h6>Fotógrafa</h6>
+    <p>
+      Graduou-se em Jornalismo, na UFRGS, em 1974 e iniciou sua carreira profissional no jornal Zero Hora. Nos anos
+      seguintes, além de colocaborar para jornais nacionais, trabalhou na Cooperativa dos Jornalistas de Porto Alegre.
+      Em 1978, abriu a agência Ponto de Vista, com mais três colegas, com os quais fez os livros independentes de
+      fotografia SANTA SOJA e PONTO DE VISTA, Um Depoimento Fotográfico.
+    </p>
+    <p>
+      Eneida viveu no exterior, entre 1979 e 19811 e, no retorno a Porto Alegre, consolidou sua formação como repórter
+      fotográfica, na década de 1980, trabalhando nas revistas Veja e Isto É, e também como colaboradora das revistas 
+      Marieclaire e Cláudia. Para essas revistas, fez muitas matérias especiais e internacionais. (Escandinávia, Cone
+      Sul, Antártida, Japão, Ilha s Maldivas, África, Turquia e outras)
+    </p>
+    <p>
+      Fez várias exposições individuais, sendo que INTERIORES, em 2007, na galeria Bolsa de Arte, em Porto Alegre,
+      recebeu Prêmio Açorianos de Melhor Exposição do ano.
+    </p>
+    <p>
+      Outras individuais: Londres Por Telefone, Respeitável Circo!, Terra à Vista, Turquia,
+      Japão - Impressões Visuais
+    </p>
+    <p>
+      Em 2001, concluiu pesquisa e publicou livro sobre LUNARA, fotógrafo pioneiro de Porto Alegre. Recentemente, em
+      junho de 2014, pesquisou a obra e co-dirigiu curta metragem sobre outro fotógrafo gaúcho, SIOMA Breitman. Esse
+      documentário, Sioma, o Papel da Fotografia, recebeu diversas premiações, como prêmio Aquisição, da RBS e da TVE,
+      no Festival de Cinema de Gramado, e também o prêmio de melhor documentário no Recine, concedido pelo Arquivo
+      Nacional . Em setembro de 2015, foi nominado entre os cinco concorrentes a melhor curta documentário pela Academia
+      Brasileira de Cinema. Sua exibição nacional foi adquirida pelo Canal Brasil.
+    </p>
+    <p>
+      Eneida dedica especial atenção ao nosso patrimônio histór ico e documentou, para PHAN e também para trabalhos
+      pessoais, os sítios tombados das Missões e Antônio Prado, entre outros.
+    </p>
+    <p>
+      Tem usado, desde 2003, a câmera do telefone celular para desenvolver a maior parte de seu trabalho autoral. 
+    </p>
+  </div>
+</div>
+<!-- /Modal -->
+
+<!-- Modal - Evandro Teixeira -->
+<div id="modal03" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Fechar"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-top w3-transparent w3-padding-64 cx-justify">
+    <img src="./images/jur_evandro_teixeira.png" alt="Evandro Teixeira" class="w3-display-topright">
+    <h5>Evandro Teixeira</h5>
+    <h6>Fotojornalista</h6>
+    <p>
+      Iniciou carreira em 1958 no jornal carioca Diário da Noite, sua sensibilidade e técnica o levaram a trabalhar
+      para o Jornal do Brasil, onde o baiano dedicou 40 anos de sua carreira. O trabalho de Evandro é versátil e se
+      destaca tanto na área de política como na de esportes, onde realizou a icônica fotografia de Ayrton Senna,
+      piscando de dentro do seu capacete.
+    </p>
+    <p>
+      Muitos acontecimentos marcantes na história do Brasil foram retratados por Evandro, até hoje suas fotografias
+      são reproduzidas. Sua carreira como fotojornalista conta com a cobertura de momentos, como chegada do general
+      Castello Branco ao Forte de Copacabana durante o golpe militar de 1964, a repressão ao movimento estudantil no
+      Rio de Janeiro, em 1968, e a queda do governo Salvador Allende, no Chile, em 1973, além de eventos como diversos
+      Jogos Olímpicos e Copas do Mundo.
+    </p>
+    <p>
+      Suas fotografias integram acervos importantes como o do Masp, em São Paulo, Belas Artes de Zurique, na Suíça e
+      Museu de Arte Moderna La Tertulha, Colombia. O fotógrafo ainda editou cinco livros: Fotojornalismo, Canudos 100
+      Anos, Livro das Águas, Pablo Neruda: Vou Viver, 68 Destinos: Passeata dos 100 Mil e seu último livro lançado em
+      2015, Evandro Teixeira : Retratos do Tempo, 50 anos de Fotojornalismo.
+    </p>
+  </div>
+</div>
+<!-- /Modal -->
+
+<!-- Modal - Orlando Azevedo -->
+<div id="modal04" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Fechar"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-top w3-transparent w3-padding-64 cx-justify">
+    <img src="./images/jur_orlando_azevedo.png" alt="Orlando Azevedo" class="w3-display-topright">
+    <h5>Orlando Azevedo</h5>
+    <h6>Fotógrafo</h6>
+    <p>Nasceu em 1949, na Ilha Terceira, Açores/Portugal</p>
+    <p>Vive no Brasil desde 1963. Formado em Direito.</p>
+    <p>
+      Dedica-se profissionalmente  à fotografia documental em projetos especiais,  assim como,  à criação  autoral,
+      em seu estúdio em Curitiba.
+    </p>
+    <p>
+      Especializado em  expedições e projetos de longa duração.
+    </p>
+    <p>
+      Editor.
+    </p>
+    <p>
+      <strong>Obras em acervo</strong><br>
+      International Center of Photography , Nova York, Centre Georges Pompidou , Museu Françês de Fotografia/Paris,
+      Museu de Arte de São Paulo,  Museu de Arte Moderna de São Paulo,  Instituto Cultural Itaú,  Museu de Fotografia
+      Cidade de Curitiba, Empresa Portuguesa das Águas Livres/Lisboa,  Biblioteca Nacional do Rio de Janeiro , Museu
+      Afro Brasileiro, São Paulo , Mon – Museu Oscar Niemeyer.,Curitiba.Fototeca de Cuba,Havana.
+    </p>
+    <p>
+      Várias coleções privadas nacionais e internacionais
+    </p>
+    <strong>Livros publicados</strong>
+    <ul>
+      <li>2014  Rio Grande-RS</li>
+      <li>2012 Expedição Coração do Brasil – Paranaguá, Lagamar</li>
+      <li>2010 Marinhas - Arqueologia da morte</li>
+      <li>2008  Expedição Coração do Brasil – Paraná</li>
+      <li>2004  Brennand</li>
+      <li>2004  Sudarium</li>
+      <li>2002  Iguaçu</li>
+      <li>2002  Coleção Coração do Brasil, três volumes: Homem, Terra e Mito</li>
+      <li>1994  Jardim de Anões</li>
+      <li>1987  Fitas e Bandeiras Venske</li>
+    </ul>
+  </div>
+</div>
+<!-- /Modal -->
+  
+<!-- Modal - Valdemir Cunha -->
+<div id="modal05" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Fechar"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-top w3-transparent w3-padding-64 cx-justify">
+    <img src="./images/jur_valdemir_cunha.png" alt="Valdemir Cunha" class="w3-display-topright">
+    <h5>Valdemir Cunha</h5>
+    <h6>Fotógrafo</h6>
+    <p>
+      Valdemir Cunha nasceu em São Paulo em 1966. Cursou jornalismo na Faculdade de Comunicação Social Cásper Libero e
+      começou na fotografia em 1986, produzindo imagens para divulgação de peças teatrais.
+    </p>
+    <p>
+      Na carreira atuou como jornalista na Folha de S.Paulo, Folha da Tarde (atual Agora) e Diário do Grande ABC.
+    </p>
+    <p>
+      Especializou-se em imagens de cavalos, fotografando para a revista Hippus (título descontinuado da Editora Três) e
+      Horse Business, além de colaborar com todos veículos das associações de criadores do Brasil.
+    </p>
+    <p>
+      Mas tudo mudou na carreira de Valdemir. "Conheci o Jayme Monjardim, diretor de cinema e TV, quando eu fotografava
+      cavalos e foi ele o grande responsável por eu entrar nesse universo de viagens. Ele apareceu na minha vida por
+      acaso em 1992, relembr a. Monjardim o convidou a participar do projeto de uma minisérie no Pantanal. Durante dois
+      meses ele o acompanhou, fazendo imagens de still e documentação de l ocações. Desta viagem nasceu a paixão do
+      fotógrafo pela maior planície alagada do mundo e o seu primeiro projeto de livro, Pantanal: O Último Éden, Editora DBA,
+      2007.
+    </p>
+    <p>
+      No mesmo ano passou a colaborar para a revista Caminhos da Terra e a partir daí trabalhou durante seis anos na
+      Editora Abril, como editor de fotografia da Terra e Viagem & Turismo. Viajou por mais de oitenta países captando
+      imagens para diversos títulos da editora.
+    </p>
+    <p>
+      Conquistou várias premiações de fotografia, entre elas três prêmios Abril.
+    </p>
+    <p>
+      De 2001 a 2009 foieditor executivo na Editora Peixes e criou e coordenou o departamento de fotografia da empresa,
+      além de ter acumulado o cargo de editor executivo da revista Caminhos da Terra.
+    </p>
+    <p>
+      Em 2006 começou a produzir livros, lançou Retratos do Brasil, uma coletânea de cenas brasileiras. Em 2007 Pantanal:
+      O último Éden, DBA; em 2008, Brasil Genial da Oficina de Agosto e Mãos Preciosas: O Artesanato do Ceará, pela editora
+      Luste; em 2009 fotografou para o livro Tietê: um rio de várias faces e A Paisagem e o Olhar.
+    </p>
+    <p>
+      Em 2010 Valdemir andou pelas águas de outro rio. Cunha  e o repórter Luís Patriani lançaram o livro Paraíba do Sul -
+      a história de rio sobrevivente pela Editora Horizonte, publicação que com 82 fotografias e ilustrações retrata a
+      riqueza cultural e econômica que transborda ao longo de toda a extensão do Rio Paraíba do Sul. O livro veio no
+      formato de uma grande reportagem realizada pela dupla de jornalist as, que juntos, percorreram o Rio Paraíba do Sul
+      em toda a sua extensão registrando os diversos ambientes culturais e históricos, a diversidade geográfica e as
+      principais questões ambientais que protagonizam o trajeto do rio. No livro o peso hist órico -econômi co do eixo
+      Rio - São Paulo, caminho do ouro de Minas Gerais, da lavoura da cana-de-açúcar e do café, da mineração e da
+      crescente industrialização que permanece até hoje.
+    </p>
+    <p>
+      Tornou-se publisher da Editora Origem empresa que fundou com o objetivo de viabilizar projetos ligados ao Brasil e
+      passou a se dedicar à empresa com exclusividade desde 2010. A Origem nasceu para fazer projetos ligados à cultura,
+      população e geografia do Brasil. E, de acordo com Valdemir, a editora quer ir ainda mais longe "a ideia, antecipa,
+      é que a partir de 2015 passe a publicar outros autores que trabalhem também com essa temática".
+    </p>
+  </div>
+</div>
+<!-- /Modal -->
+  
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-padding-16">
+    <a href="http://www.fiap.net" target="_blank" class="w3-margin"><img src="./images/ico_fiap.png" alt="FIAP"></a>
+    <a href="http://www.confoto.art.br" target="_blank" class="w3-margin"><img src="./images/ico_confoto.png" alt="CONFOTO"></a>
+  </div>
+
+  <a href="#inicio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volte para o início</a>
+  <div class="w3-xlarge w3-section">
+    <a class="cx-social" href="http://www.clubedofotografodecaxias.com.br" target="_blank" title="Website"><i class="fa fa-home w3-hover-opacity"></i></a>
+    <a class="cx-social" href="http://fb.com/clubedofotografo/" target="_blank" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a class="cx-social" href="http://instagram.com/clubedofotografodecaxiasrs/" target="_blank" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a class="cx-social" href="https://www.youtube.com/channel/UCo-mG87fDqDjc5-f2Dy8Ilw" target="_blank" title="Youtube"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <a class="cx-social" href="https://www.flickr.com/people/clubedofotografo/" target="_blank" title="Flickr"><i class="fa fa-flickr w3-hover-opacity"></i></a>
+  </div>
+  <p>
+    Powered by <a href="http://www.clubedofotografodecaxias.com.br" title="Clube do Fotógrafo de Caxias do Sul" target="_blank" class="w3-hover-text-green">#CFCX</a>
+  </p>
+</footer>
+<!-- /Footer -->
+
+<!-- Add Google Maps -->
+<script>
+  function myMap(){
+    myCenter=new google.maps.LatLng(-29.1708972,-51.1866808);
+    var mapOptions= {
+      center:myCenter,
+      zoom:18, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myCenter
+    });
+    marker.setMap(map);
+  }
+
+  // Modal Image Gallery
+  function openModal(element) {
+    id = element.getAttribute("data-modal");
+    document.getElementById(id).style.display = "block";
+  }
+  // Change style of navbar on scroll
+  window.onscroll = function() {myFunction()};
+  function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+  }
+  // Used to toggle the menu on small screens when clicking on the menu button
+  function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  // Sponsors Carousel
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("sponsors");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 2 seconds
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-6tSRZeGWKV7ZMdd8z9i5FtFY7VowMLA&callback=myMap"></script>
+</body>
+</html>

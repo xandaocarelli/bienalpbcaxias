@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resultado | XXX Bienal Brasileira de Arte Fotográfica Preto e Branco</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+      background-color: black;
+    }
+    .cx-navbar { color: #a2a2a2 }
+    .cx-title {text-shadow: 2px 2px 2px black; white-space:nowrap; }
+    .cx-photo {padding: 0px 3px 0px 3px}
+    .cx-cursor { cursor: pointer }
+    .cx-social { padding-left: 5px; padding-right: 5px }
+    .cx-justify { text-align: justify;text-justify: inter-word; }
+    .cx-badge { width: 30px }
+    .cx-apoiadores { max-width:125px }
+    .cx-rod-apoiadores { padding: 0px 2px 0px 2px }
+    .cx-parcerias { color: #777 }
+    .cx-pointer { cursor: pointer }
+    /* Sponsors slide */
+    .sponsors {display:none;}
+    /* */
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+  </style>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118574294-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-118574294-1');
+  </script>
+</head>
+<body>
+
+<!-- Bottom Sponsors -->
+<div class="w3-bottom w3-small w3-card-4 w3-center w3-white">
+  <strong class="cx-parcerias">PARCERIAS</strong>
+  <div class="w3-content w3-section" style="max-width:680px">
+    <img class="sponsors w3-image" src="./images/pat_sponsors_1.png">
+    <img class="sponsors w3-image" src="./images/pat_sponsors_2.png">
+    <img class="sponsors w3-image" src="./images/pat_sponsors_3.png">
+  </div>
+</div>
+<!-- /Bottom Sponsors -->
+  
+<div class="w3-display-container" id="inicio">
+  <div class="w3-row">
+    <div class="w3-third">&nbsp;</div>
+    <div class="w3-third w3-center">
+      <img src="./images/logo.png" height="100" alt="Bienal PB 2018">
+    </div>
+    <div class="w3-third">&nbsp;</div>
+  </div>
+
+  <div class="w3-row w3-white">
+    <div class="w3-col">
+      <h4 class="w3-center">E AÍ? O QUE É?</h4>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m3">&nbsp;</div>
+    <div class="w3-col m6 w3-center">
+      <video width="600" controls style="width: 100%; height: auto; margin: 20px 0px 20px 0px">
+        <source src="./videos/oquee.mp4" type="video/mp4">
+          <a href="https://www.youtube.com/watch?v=BccayVfIzLY" target="_blank">
+            <img src="./images/video_oquee.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+          </a>
+          <p class="w3-small">Clique na imagem acima para abrir o vídeo no nosso canal do Youtube</p>
+      </video>
+    </div>
+    <div class="w3-col m3">&nbsp;</div>
+  </div>
+
+  <div class="w3-row w3-white">
+    <div class="w3-col">
+      <h4 class="w3-center">PREMIADAS</h4>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m3">&nbsp;</div>
+    <div class="w3-col m6">
+      <img src="./images/A1_Lebrao.jpg" onClick="openModal('A1_Lebrao.jpg')" class="w3-image w3-padding-16 cx-pointer" alt="Primeiro Lugar Individual">
+    </div>
+    <div class="w3-col m3">&nbsp;</div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m1">&nbsp;</div>
+    <div class="w3-col m5">
+      <img src="./images/A2_Tomas.jpg" onClick="openModal('A2_Tomas.jpg')" class="w3-image w3-padding-16 cx-pointer" alt="Segundo Lugar Individual">
+    </div>
+    <div class="w3-col m5">
+        <img src="./images/A3_Arian.jpg" onClick="openModal('A3_Arian.jpg')" class="w3-image w3-padding-16 cx-pointer" alt="Terceiro Lugar Individual">
+      </div>
+    <div class="w3-col m1">&nbsp;</div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m3">&nbsp;</div>
+    <div class="w3-col m6 cx-justify"><p>Para os três primeiros lugares individuais, além das medalhas cedidas pela CONFOTO, foram entregues
+      os troféus em homenagem aos fundadores do Clube do Fotógrafo de Caxias do Sul.</p></div>
+    <div class="w3-col m3">&nbsp;</div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m2">&nbsp;</div>
+    <div class="w3-col m8">
+      <div class="w3-row">
+        <div class="w3-third">
+          <img src="./images/CFCX1_Aldo.jpg" onClick="openModal('CFCX1_Aldo.jpg')" class="w3-image w3-padding-16 cx-pointer" alt="Segundo Lugar Individual">
+        </div>
+        <div class="w3-third">
+          <img src="./images/CFCX2_Walter.jpg" onClick="openModal('CFCX2_Walter.jpg')" class="w3-image w3-padding-16 cx-pointer" alt="Segundo Lugar Individual">
+        </div>
+        <div class="w3-third">
+          <img src="./images/CFCX3_Schiavo.jpg" onClick="openModal('CFCX3_Schiavo.jpg')" class="w3-image w3-padding-16 cx-pointer" alt="Segundo Lugar Individual">
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m2">&nbsp;</div>
+  </div>
+  
+  <div class="w3-row w3-white">
+    <div class="w3-col">
+      <h4 class="w3-center">MENÇÕES HONROSAS</h4>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-third"><img src="./images/MH1_Pressanto.jpg" onClick="openModal('MH1_Pressanto.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH2_Arian.jpg" onClick="openModal('MH2_Arian.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH3_Bruna.jpg" onClick="openModal('MH3_Bruna.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH4_Carlos.jpg" onClick="openModal('MH4_Carlos.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH5_Elias2.jpg" onClick="openModal('MH5_Elias2.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH6_FranciscoSergio.jpg" onClick="openModal('MH6_FranciscoSergio.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH7_Gisele.jpg" onClick="openModal('MH7_Gisele.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH8_JoaoJL.jpg" onClick="openModal('MH8_JoaoJL.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH9_JoseCostardi.jpg" onClick="openModal('MH9_JoseCostardi.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH10_LourdesSal.jpg" onClick="openModal('MH10_LourdesSal.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH11_LuisBarp.jpg" onClick="openModal('MH11_LuisBarp.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH12_LuisBhering.jpg" onClick="openModal('MH12_LuisBhering.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH13_LuisBhering.jpg" onClick="openModal('MH13_LuisBhering.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH14_MarceloCamacho.jpg" onClick="openModal('MH14_MarceloCamacho.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH15_MariliseCesa.jpg" onClick="openModal('MH15_MariliseCesa.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH16_MariliseCesa.jpg" onClick="openModal('MH16_MariliseCesa.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH17_PauloRapoport.jpg" onClick="openModal('MH17_PauloRapoport.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH18_SilviaAndreasi.jpg" onClick="openModal('MH18_SilviaAndreasi.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+    <div class="w3-third"><img src="./images/MH19_Thiago.jpg" onClick="openModal('MH19_Thiago.jpg')"  class="w3-image w3-padding-16 cx-pointer" alt="Menção Honrosa"></div>
+  </div>
+</div>
+
+<div class="w3-display-container">
+  <div class="w3-row w3-white">
+    <div class="w3-col">
+      <h4 class="w3-center">FOTOS CLASSIFICADAS</h4>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m3">&nbsp;</div>
+    <div class="w3-col m6 w3-center">
+      <video width="600" controls style="width: 100%; height: auto; margin: 20px 0px 20px 0px">
+        <source src="./videos/classificadas.mp4" type="video/mp4">
+          <a href="https://www.youtube.com/watch?v=0iwKIo5i9J0" target="_blank">
+            <img src="./images/video_classificadas.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+          </a>
+          <p class="w3-small">Clique na imagem acima para abrir o vídeo no nosso canal do Youtube</p>
+      </video>
+    </div>
+    <div class="w3-col m3">&nbsp;</div>
+  </div>
+
+  <div class="w3-row w3-padding-16">
+    <div class="w3-col m1 w3-hide-small">&nbsp;</div>
+    <div class="w3-col m10 s10">
+      <table class="w3-table-all w3-margin w3-padding-64 w3-small">
+        <tr>
+          <th>Classificação</th>
+          <th>Nome</th>
+          <th>Foto</th>
+          <th>Fotoclube</th>
+        </tr>
+        <tr><td>Primeiro Lugar</td><td>João Carlos Lebrão</td><td>As freirinhas</td><td>Associação de Fotógrafos Fototech</td></tr>
+        <tr><td>Segundo Lugar</td><td>Tomas Brugger</td><td>O céu é o limite</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Terceiro Lugar</td><td>Arian Jaci Giacomet</td><td>O gondoleiro</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Menção Honrosa</td><td>Álvaro João Pressanto</td><td>Contemplação</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Menção Honrosa</td><td>Arian Jaci Giacomet</td><td>O casco no descompasso</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Menção Honrosa</td><td>Bruna Grassi</td><td>Canto d´alma</td><td>Fotocineclube Foto in Foco</td></tr>
+        <tr><td>Menção Honrosa</td><td>Carlos Roberto Chaves Faria </td><td>Garboso</td><td>Salvador Foto Clube</td></tr>
+        <tr><td>Menção Honrosa</td><td>Elias Rosal </td><td>Vira o mundo</td><td>ABCclick Fotoclube</td></tr>
+        <tr><td>Menção Honrosa</td><td>Francisco Sérgio da Costa Correa</td><td>Veloster</td><td>Fotoclube Lentes da Amazônia</td></tr>
+        <tr><td>Menção Honrosa</td><td>Gisele Martins</td><td>Vida Marajoara</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Menção Honrosa</td><td>João Jorge Leite</td><td>A liberdade</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Menção Honrosa</td><td>José Antonio Costardi</td><td>Jegues de Jeri</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Menção Honrosa</td><td>Lourdes Maria de Souza Solarini</td><td>40°</td><td>Foto Cine Clube Bandeirante</td></tr>
+        <tr><td>Menção Honrosa</td><td>Luis Fernando Barp</td><td>Guerrilheiro do Che</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Menção Honrosa</td><td>Luiz Bhering </td><td>A fila</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Menção Honrosa</td><td>Luiz Bhering </td><td>Paisagem completa</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Menção Honrosa</td><td>Marcelo Camacho</td><td>Pega o boi</td><td>Foto Cine Clube Bandeirante</td></tr>
+        <tr><td>Menção Honrosa</td><td>Marilise Cesa</td><td>Catequese</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Menção Honrosa</td><td>Marilise Cesa</td><td>Procissão</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Menção Honrosa</td><td>Paulo Rapaport</td><td>Mãe Mursi no Vale do Omo -Etiópia</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Menção Honrosa</td><td>Silvia Andreasi</td><td>Liberdade interior</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Menção Honrosa</td><td>Thiago Gleria</td><td>Taquileña</td><td>Poesia do Olhar Clube de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Adriano Soldatelli</td><td>Aconchego à moda antiga</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Adriano Soldatelli</td><td>Delicadeza no Delicate Arch</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Adriano Souza de Almeida</td><td>Penitentes de Barbalha 3</td><td>Poesia do Olhar Clube de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Aldo Toniazzo</td><td>Il nonno</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Alexandra Ramos</td><td>A falsa doçura das meninas Mursi</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Alice Ogawa</td><td>Flautista do Vale de La Luna</td><td>Foto Clube de Londrina</td></tr>
+        <tr><td>Classificada</td><td>Ana Taemi</td><td>A saga</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Ana Taemi</td><td>Atrás poeira</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Ana Taemi</td><td>Guieiro</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>André Antonio Araujo de Medeiros</td><td>Três mundos</td><td>Salvador Foto Clube</td></tr>
+        <tr><td>Classificada</td><td>André Motta de Lima</td><td>Platão</td><td>Salvador Foto Clube</td></tr>
+        <tr><td>Classificada</td><td>Andre Soares Menegat</td><td>Amor</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Andrea Goldschmidt</td><td>Devoção coletiva</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Andrea Goldschmidt</td><td>Encontro</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Angela Cristina Horokosky</td><td>O desconhecido</td><td>ABCclick Fotoclube</td></tr>
+        <tr><td>Classificada</td><td>Annemarie Brugger</td><td>À espera </td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Annemarie Brugger</td><td>Refúgio</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Annemarie Brugger</td><td>Te amarei para sempre</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Antonio Carlos Lima</td><td>Verônicas</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Antonio José dos Anjos Brito</td><td>Depressão</td><td>Confraria Fotográfica</td></tr>
+        <tr><td>Classificada</td><td>Apolo Salomão Sales </td><td>Sombras da segurança</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Aretusa Silva de Souza</td><td>Quem não gosta de samba...</td><td>ABCclick Fotoclube</td></tr>
+        <tr><td>Classificada</td><td>Armando Bruck</td><td>Só mulheres</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Arthur Fujii</td><td>Partitura</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Beto Andrade</td><td>Minha casa de campo pós lava-jato</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Cacá Rodrigues</td><td>O ferreiro</td><td>ABCclick Fotoclube</td></tr>
+        <tr><td>Classificada</td><td>Carla Tessari</td><td>Passado e presente</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Carlos Gandara</td><td>Sob o templo</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Carlos Roberto Chaves Faria </td><td>Aparecida</td><td>Salvador Foto Clube</td></tr>
+        <tr><td>Classificada</td><td>Carlos Roberto Chaves Faria </td><td>Momento decisivo</td><td>Salvador Foto Clube</td></tr>
+        <tr><td>Classificada</td><td>Charles Appilt</td><td>A ferro e fogo</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Charles Appilt</td><td>A freguesa</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Claire Jean</td><td>Axé em terra quente</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Claire Jean</td><td>Lua matricia</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Cristian Ferrari</td><td>A partida</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Cristiane Cassini Peter</td><td>Artilheiro</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Cristina Tessari</td><td>Mar ou ar</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Cristina Vaz Guimarães</td><td>Eu mais eu</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Daiton Fonseca</td><td>Viejo</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Danielle Soares Filgueira</td><td>Fogões frios</td><td>Poesia do Olhar Clube de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Denise Schwingel</td><td>Troca de carinho</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Dietmar Speer</td><td>A modelo</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Dietmar Speer</td><td>Escritório</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Dina Lucia Lucas Bessa</td><td>Brincando na fonte</td><td>Fotoclube Rio Preto e Branco </td></tr>
+        <tr><td>Classificada</td><td>Eddie Kevlar</td><td>Ditadura</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Elbio Gonçalves</td><td>Já nela</td><td>Foto Clube de Londrina</td></tr>
+        <tr><td>Classificada</td><td>Elias Ribeiro</td><td>Criança feliz</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Fabrizio Ditadi Brustolin</td><td>Destino cravado de bala</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Fernanda Altenfelder</td><td>Assombro</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Fernando Bueno</td><td>WV-Kombi-Fusca</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Flavio Veloso</td><td>Campo de várzea</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Flavio Veloso</td><td>Cristo Redentor</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Francisco Menezes Silva Filho</td><td>Astro curumim</td><td>Fotoclube Lentes da Amazônia</td></tr>
+        <tr><td>Classificada</td><td>Gisa Fedrizzi</td><td>A espera</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Gisele Martins</td><td>Enquadrados</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Gui Moane</td><td>Um dia ela pega</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Helena Maria Sbravati</td><td>Gargalhada</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Ieda Lima</td><td>O sertanista</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Ingrid Brugger</td><td>Restos</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Jarbas Mattos</td><td>Hospitalidade</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Javier Paquito Herrera</td><td>Rush</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>João Antonio Benz Fagim</td><td>Manu</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>João Maria da Silva Bezerra</td><td>Boi de Guimarães</td><td>Poesia do Olhar Clube de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>João Maria da Silva Bezerra</td><td>Olhares </td><td>Poesia do Olhar Clube de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>José Adilson Rocha da Rosa</td><td>Naufrágio</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>José Alberto de Senna</td><td>Marcas do deserto</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>José Alberto de Senna</td><td>O gigante</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>José Eduardo F. Boaventura</td><td>Olhar profundo</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>José Henrique Paraguassu Oliveira</td><td>Uma amigo olhando pra dentro</td><td>Salvador Foto Clube</td></tr>
+        <tr><td>Classificada</td><td>José Marcos de Moraes</td><td>Combinado</td><td>Fotoclube Câmera & Luz</td></tr>
+        <tr><td>Classificada</td><td>Juliana Rossa</td><td>Mirada</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Juliana Rossa</td><td>Soslaio</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Juliana Rossa</td><td>Universo</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Keko Ferraz</td><td>Reflexos da reflexão</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Laure Gomes</td><td>Afar</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Laure Gomes</td><td>Peregrina</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Lucille Kanzawa</td><td>Celebrando Gebre Menfes Kidus</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Lucille Kanzawa</td><td>Luz do sertão</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Lucinea Aparecida de Rezende</td><td>Still life</td><td>Foto Clube de Londrina</td></tr>
+        <tr><td>Classificada</td><td>Luis Fernando Barp</td><td>Esperando por Che</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Luisa H. Teradaira</td><td>As três graças</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Luiz Bhering </td><td>O menino e o mundo</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Luiz Geraldo da Silva</td><td>Êxtase em preto e branco</td><td>Fotoclube Câmera & Luz</td></tr>
+        <tr><td>Classificada</td><td>Luiz Raimundo Tomazzoni</td><td>Colheita</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Marcelo Camacho</td><td>Vida lá fora</td><td>Foto Cine Clube Bandeirante</td></tr>
+        <tr><td>Classificada</td><td>Márcia Dall'Ago</td><td>Bianca</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Márcia Dall'Ago</td><td>E não é que a bola furou</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Márcio Milesi</td><td>Hora do lanche</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Marco Antonio Sá</td><td>Veja e escute...</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Maria Adelaide B. B. da Silva</td><td>Inocência</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Maria Cristina Alves Penha</td><td>Avó, mãe e filha </td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Marilise Cesa</td><td>Cavalhadas</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Marta Braga</td><td>Gratidão</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Mauricio Berndt</td><td>Sapecando o galo</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Melissa Freitas</td><td>Amigos do peito</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Mirian Cardoso de Souza</td><td>Proteção divina</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Mirian Cardoso de Souza</td><td>Reflexão</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Mirian Costa</td><td>O passado, hoje, o amanhã</td><td>Foto Clube de Londrina</td></tr>
+        <tr><td>Classificada</td><td>Nilo Piccoli</td><td>O voo da garça</td><td>Clube Foto Amigos de Santos</td></tr>
+        <tr><td>Classificada</td><td>Paulo Jolkesky</td><td>BikeSampa</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Paulo Jolkesky</td><td>Dominação</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Ricardo Borges</td><td>Ambular-te</td><td>Foto Clube de Londrina</td></tr>
+        <tr><td>Classificada</td><td>Ricardo Sena</td><td>Iluminalma</td><td>Confraria Fotográfica</td></tr>
+        <tr><td>Classificada</td><td>Rita Barreto</td><td>Harmonia</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Roberto Soares Gomes</td><td>Faces</td><td>Associação Fotográfica RioFotográfico</td></tr>
+        <tr><td>Classificada</td><td>Roberto Soares Gomes</td><td>Nuns</td><td>Associação Fotográfica RioFotográfico</td></tr>
+        <tr><td>Classificada</td><td>Ronaldo Ronan Rufino</td><td>Pescador nordeste</td><td>Foto Clube de Londrina</td></tr>
+        <tr><td>Classificada</td><td>Rony Costa</td><td>Folia das almas</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Rose Steinmtz</td><td>Conectados no prédio</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Rui Porto</td><td>Império da violência</td><td>Foto Clube de Londrina</td></tr>
+        <tr><td>Classificada</td><td>Samaroni Lima Carvalho</td><td>Maré de Sizígia</td><td>Poesia do Olhar Clube de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Sebá Neto</td><td>Vovó centenária</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Suzana Negrine Pires de Campos</td><td>A força de um olhar</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Suzana Negrine Pires de Campos</td><td>Um sonho de liberdade</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Tadeu Vilani</td><td>Doma</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Tadeu Vilani</td><td>Palanque</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Tadeu Vilani</td><td>Quadro</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Tadeu Vilani</td><td>Velho</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Thiago Gleria</td><td>Eu sou Exú</td><td>Poesia do Olhar Clube de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Tomas Brugger</td><td>Arrastão</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Tomas Brugger</td><td>Tiro de laço</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Tomas Kolisch Jr.</td><td>Liberdade</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Tomas Kolisch Jr.</td><td>Olhar</td><td>Grupo Luminous de Fotografia</td></tr>
+        <tr><td>Classificada</td><td>Vanessa Tartarotti Wisintainer</td><td>Providência divina</td><td>Clube do Fotógrafo de Caxias do Sul</td></tr>
+        <tr><td>Classificada</td><td>Walter Magalhães</td><td>Coração urbano</td><td>Fotoclube Câmera & Luz</td></tr>
+        <tr><td>Classificada</td><td>William de Simone</td><td>Barcos</td><td>Foto Cine Clube Bandeirante</td></tr>
+        <tr><td>Classificada</td><td>Zenira Suzuki</td><td>Ao som dos pássaros</td><td>Grupo Luminous de Fotografia</td></tr>
+      </table>
+    </div>
+    <div class="w3-col m1 w3-hide-small">&nbsp;</div>
+  </div>
+
+  <div class="w3-row w3-padding-64">
+    <div class="w3-col m2">&nbsp;</div>
+    <div class="w3-col m8 w3-center">Clique <a href="./files/Catalogo_CONFOTO_Bienal2018.pdf">aqui</a> para acessar o Catálogo
+      CONFOTO com o Resultado da Bienal
+    </div>
+    <div class="w3-col m2">&nbsp;</div>
+  </div>
+
+</div>
+
+<div class="w3-display-container">
+  <div class="w3-row w3-white">
+    <div class="w3-col">
+      <h4 class="w3-center">FOTOCLUBES</h4>
+    </div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m3">&nbsp;</div>
+    <div class="w3-col m6">
+      <img src="./images/FC1_Luminous.jpeg" class="w3-image w3-padding-16" alt="Primeiro Lugar Fotoclubes">
+    </div>
+    <div class="w3-col m3">&nbsp;</div>
+  </div>
+
+  <div class="w3-row">
+    <div class="w3-col m1">&nbsp;</div>
+    <div class="w3-col m4">
+      <img src="./images/FC2_CFCX.jpeg" class="w3-image w3-padding-16" alt="Segundo Lugar Fotoclubes">
+    </div>
+    <div class="w3-col m2">&nbsp;</div>
+    <div class="w3-col m4">
+        <img src="./images/FC3_Londrina.jpeg" class="w3-image w3-padding-16" alt="Terceiro Lugar Fotoclubes">
+      </div>
+    <div class="w3-col m1">&nbsp;</div>
+  </div>
+  
+  <div class="w3-row w3-padding-16">
+    <div class="w3-col m1 w3-hide-small">&nbsp;</div>
+    <div class="w3-col m10 s10">
+      <table class="w3-table-all w3-margin w3-padding-64 w3-small">
+        <tr>
+          <th>Fotoclube</th>
+          <th>Pontos</th>
+        </tr>
+        <tr><td>Grupo Luminous de Fotografia</td><td>1429</td></tr>
+        <tr><td>Clube do Fotógrafo de Caxias do Sul</td><td>1206</td></tr>
+        <tr><td>Foto Clube de Londrina</td><td>172</td></tr>
+        <tr><td>Salvador Foto Clube</td><td>155</td></tr>
+        <tr><td>Poesia do Olhar Clube de Fotografia</td><td>142</td></tr>
+        <tr><td>Foto Cine Clube Bandeirante</td><td>140</td></tr>
+        <tr><td>Foto Clube ABClick</td><td>107</td></tr>
+        <tr><td>Foto Clube Câmera & Luz</td><td>57</td></tr>
+        <tr><td>Fotoclube Lentes da Amazônia</td><td>51</td></tr>
+        <tr><td>Associação de Fotógrafos Fototech</td><td>46</td></tr>
+        <tr><td>Foto Cine Foto in Foco</td><td>40</td></tr>
+        <tr><td>Confraria Fotográfica</td><td>38</td></tr>
+        <tr><td>Associação Fotográfica RioFotográfico</td><td>23</td></tr>
+        <tr><td>Clube Foto Amigos de Santos</td><td>11</td></tr>
+        <tr><td>Foto Clube Rio Preto e Branco</td><td>11</td></tr>
+      </table>
+    </div>
+    <div class="w3-col m1 w3-hide-small">&nbsp;</div>
+  </div>
+</div>
+
+<div class="w3-row w3-white">
+  <div class="w3-col">
+    <h4 class="w3-center">SABE COMO A GENTE FAZ UMA BIENAL?</h4>
+  </div>
+</div>
+
+<div class="w3-row">
+  <div class="w3-col m3">&nbsp;</div>
+  <div class="w3-col m6 w3-center">
+    <video width="600" controls style="width: 100%; height: auto; margin: 20px 0px 20px 0px">
+      <source src="./videos/comofazbienal.mp4" type="video/mp4">
+        <a href="https://www.youtube.com/watch?v=gibJ6aG1lR8" target="_blank">
+          <img src="./images/video_comofazbienal.jpg" alt="CFCX Youtube" style="width:100%" class="w3-hover-opacity w3-grayscale-max">
+        </a>
+        <p class="w3-small">Clique na imagem acima para abrir o vídeo no nosso canal do Youtube</p>
+      </video>
+  </div>
+  <div class="w3-col m3">&nbsp;</div>
+</div>
+
+  <!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-padding-16">
+    <a href="http://www.fiap.net" target="_blank" class="w3-margin"><img src="./images/ico_fiap.png" alt="FIAP"></a>
+    <a href="http://www.confoto.art.br" target="_blank" class="w3-margin"><img src="./images/ico_confoto.png" alt="CONFOTO"></a>
+  </div>
+
+  <a href="#inicio" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Volte para o início</a>
+  <div class="w3-xlarge w3-section">
+    <a class="cx-social" href="http://www.clubedofotografodecaxias.com.br" target="_blank" title="Website"><i class="fa fa-home w3-hover-opacity"></i></a>
+    <a class="cx-social" href="http://fb.com/clubedofotografo/" target="_blank" title="Facebook"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a class="cx-social" href="http://instagram.com/clubedofotografodecaxiasrs/" target="_blank" title="Instagram"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a class="cx-social" href="https://www.youtube.com/channel/UCo-mG87fDqDjc5-f2Dy8Ilw" target="_blank" title="Youtube"><i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <a class="cx-social" href="https://www.flickr.com/people/clubedofotografo/" target="_blank" title="Flickr"><i class="fa fa-flickr w3-hover-opacity"></i></a>
+  </div>
+  <p>
+    Powered by <a href="http://www.clubedofotografodecaxias.com.br" title="Clube do Fotógrafo de Caxias do Sul" target="_blank" class="w3-hover-text-green">#CFCX</a>
+  </p>
+</footer>
+<!-- /Footer -->
+
+<!-- Modal -->
+<div id="modalPhoto" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Fechar"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-top w3-transparent" id="modalImg">
+  </div>
+</div>
+<!-- /Modal -->
+
+<!-- Add Google Maps -->
+<script>
+  // Sponsors Carousel
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("sponsors");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 3000); // Change image every 2 seconds
+  }
+  // Modal Image Gallery
+  function openModal(photo) {
+    document.getElementById("modalPhoto").style.display = "block";
+    document.getElementById("modalImg").innerHTML ="<img src='./images/photos/" + photo + "' class='w3-image' style='max-height: 550px'>";
+  }
+</script>
+</body>
+</html>
